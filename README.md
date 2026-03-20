@@ -1,28 +1,51 @@
 # Enterprise Security Lab (Active Directory + SOC Simulation)
 
-## Overview
-This project is a hands-on enterprise security lab designed to simulate real-world IT infrastructure and cybersecurity operations.
+## 🚨 What This Proves
+This project demonstrates hands-on experience with:
 
-The lab includes building an Active Directory environment, configuring domain services, simulating attacks, and analyzing logs like a Security Operations Center (SOC) analyst.
+- Active Directory deployment and administration
+- Identity and Access Management (IAM)
+- Domain authentication workflows
+- Network configuration and troubleshooting
+- Role-Based Access Control (RBAC) and privilege management
+- Security event generation and analysis (SOC-level concepts)
 
----
-
-## Lab Objectives
-- Build and configure Active Directory Domain Services (AD DS)
-- Configure DNS and network infrastructure
-- Create and manage users, groups, and Organizational Units (OUs)
-- Join client machines to a domain
-- Simulate authentication attacks (brute force, failed logins)
-- Analyze security logs (Event Viewer / SIEM)
-- Apply system hardening and defensive controls
+This lab simulates a real-world enterprise environment used in IT operations and Security Operations Centers (SOC).
 
 ---
 
-## Lab Structure
+## 🧠 Project Context
+This lab was built to simulate an enterprise network from the ground up, following real-world blue team workflows:
 
-| Day | Topic |
+1. Build core infrastructure (Active Directory + DNS)
+2. Configure users, groups, and permissions
+3. Join endpoints to the domain
+4. Simulate attacks and authentication failures
+5. Analyze logs and detect suspicious activity
+6. Apply security controls and hardening
+
+This mirrors how real organizations build, attack, and defend their environments.
+
+---
+
+## 🧱 Lab Architecture
+
+- **Domain Controller:** Windows Server 2022 (DC01)
+- **Client Machine:** Windows 10 (WIN10-CLIENT1)
+- **Domain:** corp.local
+- **Network:** Host-only (VirtualBox)
+
+### IP Configuration
+- DC01: `192.168.56.10`
+- Client: `192.168.56.20`
+
+---
+
+## 🗂️ Lab Structure
+
+| Day | Focus |
 |-----|------|
-| Day 01 | Active Directory Setup |
+| Day 01 | Active Directory Setup & Domain Join |
 | Day 02 | Attack Simulation & Log Analysis |
 | Day 03 | Group Policy Hardening |
 | Day 04 | Authentication Attacks |
@@ -35,26 +58,48 @@ The lab includes building an Active Directory environment, configuring domain se
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
+
 - Windows Server 2022
 - Windows 10
 - Active Directory Domain Services (AD DS)
 - DNS
 - VirtualBox
-- Event Viewer
-- (Future) SIEM tools (Wazuh / Splunk)
+- Windows Event Viewer
+- (Upcoming) Wazuh / Splunk SIEM
 
 ---
 
-## Key Skills Demonstrated
-- Identity & Access Management (IAM)
-- Active Directory Administration
-- Network Configuration & Troubleshooting
-- Security Event Analysis
-- Threat Detection & Response
-- System Hardening
+## 🔐 Security Relevance
+
+Active Directory is a primary target in enterprise environments.
+
+This lab builds a realistic environment to:
+- Simulate credential-based attacks
+- Generate authentication logs (Event IDs like 4624 / 4625)
+- Analyze login behavior and detect anomalies
+- Understand how attackers move within a domain
 
 ---
 
-## Outcome
-This lab demonstrates the ability to build, secure, and analyze an enterprise network environment from both an administrative and defensive cybersecurity perspective.
+## 🎯 Key Skills Demonstrated
+
+- Active Directory setup and administration
+- Identity and Access Management (IAM)
+- Network troubleshooting (IP configuration, DNS, connectivity)
+- Domain authentication and user management
+- Privilege assignment and escalation (Domain Admins)
+- Security-focused lab design and documentation
+
+---
+
+## 📌 Outcome
+
+Successfully deployed and validated a working enterprise domain environment with:
+
+- Functional domain authentication
+- Structured user and group management
+- Networked client-server communication
+- A foundation for attack simulation and detection
+
+This lab will be expanded into a full SOC-style detection and response environment.
