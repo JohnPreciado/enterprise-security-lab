@@ -94,34 +94,26 @@ ping 192.168.56.10
 
 ## Screenshots
 
-### AD DS Installed
+## Server Setup (AD DS Installed)
+![AD DS Setup](screenshots/01-Server-Manager-AD-DS.png)
 
-![AD DS](screenshots/01-AD-DS-Installed.png)
+## Domain Controller Static IP Configuration
+![DC IP](screenshots/02-DC-IP-Configuration.png)
 
-### Client Network + Ping Test
+## Organizational Unit (OU) Structure
+![OU Structure](screenshots/03-OU-Structure.png)
 
-![Ping](screenshots/02-Client-IP-and-Ping.png)
+## Domain Verification (corp.local)
+![Domain Proof](screenshots/04-Proof-of-Domain.png)
 
-### Domain Admin Privileges
+## Client Successfully Joined to Domain
+![Domain Join](screenshots/05-domain-join.png)
 
-![Admins](screenshots/03-Domain-Admins-Membership.png)
+## Domain User Login (John Doe)
+![Login](screenshots/06-Domain-user-login-prompt.png)
 
-### Domain Verification
-
-![Domain](screenshots/04-Domain-Verification.png)
-
-### Domain Join Success
-
-![Join](screenshots/05-Domain-Join-Success.png)
-
-### Domain User Login
-
-![Login](screenshots/06-Domain-User-Login.png)
-
-### Client Static IP Configuration
-
-![IP](screenshots/07-Client-Static-IP.png)
-
+## Windows 10 Client Static IP Configuration
+![Client IP](screenshots/07-Windows10-static-IP.png)
 ---
 
 ## Skills Demonstrated
