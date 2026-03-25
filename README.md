@@ -50,11 +50,6 @@ This mirrors how real organizations build, attack, and defend their environments
 | Day 03 | Group Policy Hardening |
 | Day 04 | Authentication Attacks |
 | Day 05 | SIEM Integration |
-| Day 06 | Firewall Configuration |
-| Day 07 | Network Segmentation |
-| Day 08 | Attack Detection & Response |
-| Day 09 | Hardening & Remediation |
-| Day 10 | Final Report |
 
 ---
 
